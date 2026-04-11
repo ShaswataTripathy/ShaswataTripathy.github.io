@@ -23,17 +23,23 @@
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#journey">Journey</a>
+            <a href="#writing">Writing</a>
+            <a href="#models">Models</a>
             <a href="#connect" class="nav-cta">Connect</a>
         </div>
     </nav>
 
     <!-- Hero -->
     <section class="hero" id="hero">
+        <div class="hero-grid"></div>
+
         <div class="hero-inner">
             <div class="hero-text">
-                <p class="hero-greeting">Hey, I'm</p>
+                <p class="hero-greeting">
+                    <span class="greeting-dot"></span> Hey, I'm
+                </p>
                 <h1>Shaswata <span class="gradient-text">Tripathy</span></h1>
-                <p class="hero-tagline">I build things with <span class="rotate-word" id="rotateWord">AI</span></p>
+                <p class="hero-tagline">I build things with <span class="rotate-word" id="rotateWord">AI</span><span class="type-cursor"></span></p>
                 <p class="hero-bio">10+ years shipping code &bull; AI &amp; ML enthusiast &bull; Kolkata, India</p>
                 <div class="hero-socials">
                     <a href="https://github.com/ShaswataTripathy" target="_blank" rel="noopener" title="GitHub">
@@ -59,6 +65,18 @@
                         <img src="IMG_20260410_140511.jpg" alt="Shaswata Tripathy">
                     </div>
                 </div>
+
+                <div class="terminal-card" aria-hidden="true">
+                    <div class="term-header">
+                        <span class="term-dot red"></span>
+                        <span class="term-dot yellow"></span>
+                        <span class="term-dot green"></span>
+                        <span class="term-title">shaswata@build — zsh</span>
+                    </div>
+                    <div class="term-body">
+                        <div class="term-line"><span class="term-prompt">&gt;</span> <span id="termText"></span><span class="term-caret"></span></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -74,7 +92,7 @@
                 <div class="about-stats">
                     <div class="stat"><span class="stat-num">10+</span><span class="stat-lbl">Years</span></div>
                     <div class="stat"><span class="stat-num">4</span><span class="stat-lbl">Domains</span></div>
-                    <div class="stat"><span class="stat-num">3</span><span class="stat-lbl">Clouds</span></div>
+                    <div class="stat"><span class="stat-num">∞</span><span class="stat-lbl">Curiosity</span></div>
                 </div>
             </div>
         </div>
@@ -106,7 +124,7 @@
                 <div class="pill-group">
                     <h3>Cloud & Infra</h3>
                     <div class="pills">
-                        <span>Azure</span><span>GCP</span><span>Docker</span><span>Kubernetes</span><span>Pinecone</span><span>MongoDB</span>
+                        <span>Azure</span><span>Docker</span><span>Kubernetes</span><span>Pinecone</span><span>MongoDB</span>
                     </div>
                 </div>
             </div>
@@ -134,6 +152,125 @@
                     <p>Built trading platforms, wealth management tools & enterprise apps across fintech</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Writing -->
+    <section class="section section-alt" id="writing">
+        <div class="container">
+            <h2 class="section-label">Writing</h2>
+            <p class="section-sub">Essays and deep dives on Gen AI, machine learning, and the tech I'm exploring.</p>
+            <!-- BLOGS:START -->
+            <div class="blog-grid">
+                <a class="blog-card" href="https://medium.com/@tripathyshaswata/claude-ai-just-had-the-worst-year-ever-108968aa1f71" target="_blank" rel="noopener">
+                    <div class="blog-meta"><span class="blog-date">Apr 10, 2026</span><span class="blog-source">Medium</span></div>
+                    <h3 class="blog-title">Claude AI Just Had the Worst Year Ever</h3>
+                    <p class="blog-excerpt">From sandbox escapes to source code leaks, Anthropic’s golden child has been through it all. Grab some popcorn. Look, I love…</p>
+                    <span class="blog-cta">Read article <span class="arrow">→</span></span>
+                </a>
+                <a class="blog-card" href="https://medium.com/@tripathyshaswata/beyond-chatbots-ai-agents-are-learning-to-act-and-it-changes-everything-88b856165b06" target="_blank" rel="noopener">
+                    <div class="blog-meta"><span class="blog-date">Apr 10, 2025</span><span class="blog-source">Medium</span></div>
+                    <h3 class="blog-title">Beyond Chatbots: AI Agents Are Learning to Act, and It Changes Everything</h3>
+                    <p class="blog-excerpt">From answering questions to autonomously achieving goals — the next wave of AI is here, bringing immense potential and profound…</p>
+                    <span class="blog-cta">Read article <span class="arrow">→</span></span>
+                </a>
+                <a class="blog-card" href="https://medium.com/@tripathyshaswata/nvidia-gtc-2025-the-future-of-ai-is-here-64bc16d601c0" target="_blank" rel="noopener">
+                    <div class="blog-meta"><span class="blog-date">Apr 07, 2025</span><span class="blog-source">Medium</span></div>
+                    <h3 class="blog-title">NVIDIA GTC 2025: The Future of AI Is Here</h3>
+                    <p class="blog-excerpt">by Shaswata Tripathy “We are at the iPhone moment of artificial intelligence.” — Jensen Huang, CEO of NVIDIA At GTC 2025 , NVIDIA…</p>
+                    <span class="blog-cta">Read article <span class="arrow">→</span></span>
+                </a>
+                <a class="blog-card" href="https://medium.com/@tripathyshaswata/comparing-vision-transformers-vit-vs-convolutional-neural-networks-cnns-a-deep-dive-0712bfd36d31" target="_blank" rel="noopener">
+                    <div class="blog-meta"><span class="blog-date">Mar 19, 2025</span><span class="blog-source">Medium</span></div>
+                    <h3 class="blog-title">Comparing Vision Transformers (ViT) vs. Convolutional Neural Networks (CNNs): A Deep Dive</h3>
+                    <p class="blog-excerpt">Introduction: The Evolution of Computer Vision Models For decades, Convolutional Neural Networks (CNNs) have been the backbone of…</p>
+                    <span class="blog-cta">Read article <span class="arrow">→</span></span>
+                </a>
+                <a class="blog-card" href="https://medium.com/@tripathyshaswata/how-few-shot-learning-is-changing-the-game-in-ai-training-1d0ffb9e4c9b" target="_blank" rel="noopener">
+                    <div class="blog-meta"><span class="blog-date">Mar 19, 2025</span><span class="blog-source">Medium</span></div>
+                    <h3 class="blog-title">How Few-Shot Learning is Changing the Game in AI Training</h3>
+                    <p class="blog-excerpt">Introduction: The Data Bottleneck in AI Training Traditional machine learning models thrive on large-scale labeled datasets , but…</p>
+                    <span class="blog-cta">Read article <span class="arrow">→</span></span>
+                </a>
+                <a class="blog-card" href="https://medium.com/@tripathyshaswata/the-role-of-attention-mechanisms-in-modern-ai-models-7522d0fff3f7" target="_blank" rel="noopener">
+                    <div class="blog-meta"><span class="blog-date">Mar 12, 2025</span><span class="blog-source">Medium</span></div>
+                    <h3 class="blog-title">The Role of Attention Mechanisms in Modern AI Models</h3>
+                    <p class="blog-excerpt">Introduction: The Shift from Traditional AI to Attention-Based Models Artificial Intelligence (AI) has evolved significantly over…</p>
+                    <span class="blog-cta">Read article <span class="arrow">→</span></span>
+                </a>
+                <a class="blog-card" href="https://medium.com/@tripathyshaswata/ai-and-quantum-computing-a-future-beyond-classical-ai-6c210ad6e1e5" target="_blank" rel="noopener">
+                    <div class="blog-meta"><span class="blog-date">Mar 11, 2025</span><span class="blog-source">Medium</span></div>
+                    <h3 class="blog-title">AI and Quantum Computing: A Future Beyond Classical AI</h3>
+                    <p class="blog-excerpt">Introduction: The Limitations of Classical AI Artificial Intelligence (AI) has revolutionized industries by enabling automation,…</p>
+                    <span class="blog-cta">Read article <span class="arrow">→</span></span>
+                </a>
+                <a class="blog-card" href="https://medium.com/@tripathyshaswata/the-evolution-of-generative-ai-gans-vaes-and-diffusion-models-3a014c03aa1c" target="_blank" rel="noopener">
+                    <div class="blog-meta"><span class="blog-date">Mar 10, 2025</span><span class="blog-source">Medium</span></div>
+                    <h3 class="blog-title">The Evolution of Generative AI: GANs, VAEs, and Diffusion Models</h3>
+                    <p class="blog-excerpt">Generative AI has rapidly evolved over the past decade, pushing the boundaries of machine creativity and opening doors to…</p>
+                    <span class="blog-cta">Read article <span class="arrow">→</span></span>
+                </a>
+                <a class="blog-card" href="https://medium.com/@tripathyshaswata/the-latest-image-recognition-algorithms-revolutionizing-ai-in-2025-4f9d58e5e515" target="_blank" rel="noopener">
+                    <div class="blog-meta"><span class="blog-date">Mar 10, 2025</span><span class="blog-source">Medium</span></div>
+                    <h3 class="blog-title">The Latest Image Recognition Algorithms Revolutionizing AI in 2025</h3>
+                    <p class="blog-excerpt">Image recognition has evolved tremendously over the years, with cutting-edge advancements shaping industries such as healthcare,…</p>
+                    <span class="blog-cta">Read article <span class="arrow">→</span></span>
+                </a>
+                <a class="blog-card" href="https://medium.com/@tripathyshaswata/a-guide-to-machine-learning-implementation-steps-f07d959ffbb6" target="_blank" rel="noopener">
+                    <div class="blog-meta"><span class="blog-date">Sep 01, 2019</span><span class="blog-source">Medium</span></div>
+                    <h3 class="blog-title">A guide to Machine Learning implementation steps</h3>
+                    <p class="blog-excerpt">A Guide To Machine Learning Implementation Steps Step 1 : The first step for any project is identifying problem defining which…</p>
+                    <span class="blog-cta">Read article <span class="arrow">→</span></span>
+                </a>
+            </div>
+            <!-- BLOGS:END -->
+            <a class="section-more" href="https://medium.com/@tripathyshaswata" target="_blank" rel="noopener">See all on Medium <span class="arrow">→</span></a>
+        </div>
+    </section>
+
+    <!-- Models -->
+    <section class="section" id="models">
+        <div class="container">
+            <h2 class="section-label">Open Source Models</h2>
+            <p class="section-sub">Models and experiments I've published to the Hugging Face hub.</p>
+            <!-- MODELS:START -->
+            <div class="model-grid">
+                <a class="model-card" href="https://huggingface.co/tripathyShaswata/Phi-tiny-MoE-instruct-GGUF" target="_blank" rel="noopener">
+                    <div class="model-header">
+                        <span class="model-icon">HF</span>
+                        <span class="model-tag">text-generation</span>
+                    </div>
+                    <h3 class="model-name">Phi-tiny-MoE-instruct-GGUF</h3>
+                    <p class="model-id">tripathyShaswata / Phi-tiny-MoE-instruct-GGUF</p>
+                    <p class="model-desc">Text-generation model published on the Hugging Face hub.</p>
+                    <div class="model-stats"><span class="stat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v14M5 12l7 7 7-7"/></svg>11 downloads</span><span class="stat-item">Updated Apr 2026</span></div>
+                    <span class="model-cta">View on Hugging Face <span class="arrow">→</span></span>
+                </a>
+                <a class="model-card" href="https://huggingface.co/tripathyShaswata/sarvam-1-v0.5-GGUF" target="_blank" rel="noopener">
+                    <div class="model-header">
+                        <span class="model-icon">HF</span>
+                        <span class="model-tag">text-generation</span>
+                    </div>
+                    <h3 class="model-name">sarvam-1-v0.5-GGUF</h3>
+                    <p class="model-id">tripathyShaswata / sarvam-1-v0.5-GGUF</p>
+                    <p class="model-desc">Text-generation model published on the Hugging Face hub.</p>
+                    <div class="model-stats"><span class="stat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v14M5 12l7 7 7-7"/></svg>40 downloads</span><span class="stat-item">Updated Apr 2026</span></div>
+                    <span class="model-cta">View on Hugging Face <span class="arrow">→</span></span>
+                </a>
+                <a class="model-card" href="https://huggingface.co/tripathyShaswata/parking-space-calculator" target="_blank" rel="noopener">
+                    <div class="model-header">
+                        <span class="model-icon">HF</span>
+                        <span class="model-tag">experiment</span>
+                    </div>
+                    <h3 class="model-name">parking-space-calculator</h3>
+                    <p class="model-id">tripathyShaswata / parking-space-calculator</p>
+                    <p class="model-desc">Open-source model and experiment on the Hugging Face hub.</p>
+                    <div class="model-stats"><span class="stat-item">Experiment</span><span class="stat-item">Updated Mar 2025</span></div>
+                    <span class="model-cta">View on Hugging Face <span class="arrow">→</span></span>
+                </a>
+            </div>
+            <!-- MODELS:END -->
+            <a class="section-more" href="https://huggingface.co/tripathyShaswata" target="_blank" rel="noopener">View all on Hugging Face <span class="arrow">→</span></a>
         </div>
     </section>
 

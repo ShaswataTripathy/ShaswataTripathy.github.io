@@ -1,0 +1,41 @@
+name: Update Medium & HF content
+
+on:
+  schedule:
+    # Daily at 06:00 UTC (11:30 IST)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: update-content
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run updater
+        run: python scripts/update_content.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: auto-refresh Medium posts and HF models"
+            git push
+          fi
