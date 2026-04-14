@@ -515,6 +515,21 @@ strong { color: var(--text); font-weight: 600; }
     position: relative; z-index: 1;
 }
 
+/* Hide cards beyond 6 items */
+.blog-card:nth-child(n+7) { display: none; }
+.model-card:nth-child(n+7) { display: none; }
+
+/* Section count display */
+.section-count {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
 /* Shared "see more" link */
 .section-more {
     display: inline-flex; align-items: center; gap: 6px;

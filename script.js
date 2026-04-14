@@ -14,6 +14,33 @@ setInterval(() => {
     }, 300);
 }, 2200);
 
+// Count items in grids and display counts
+function updateSectionCounts() {
+    const writingGrid = document.querySelector('.blog-grid');
+    const modelsGrid = document.querySelector('.model-grid');
+    
+    if (writingGrid) {
+        const blogCount = writingGrid.querySelectorAll('.blog-card').length;
+        const writingCountEl = document.getElementById('writingCount');
+        if (writingCountEl) {
+            writingCountEl.textContent = `${blogCount} ${blogCount === 1 ? 'article' : 'articles'} total`;
+        }
+    }
+    
+    if (modelsGrid) {
+        const modelCount = modelsGrid.querySelectorAll('.model-card').length;
+        const modelsCountEl = document.getElementById('modelsCount');
+        if (modelsCountEl) {
+            modelsCountEl.textContent = `${modelCount} ${modelCount === 1 ? 'model' : 'models'} total`;
+        }
+    }
+}
+
+// Call on page load
+document.addEventListener('DOMContentLoaded', updateSectionCounts);
+// Also call after a short delay to catch dynamically loaded content
+setTimeout(updateSectionCounts, 500);
+
 // Terminal typewriter
 (function terminal() {
     const el = document.getElementById('termText');
