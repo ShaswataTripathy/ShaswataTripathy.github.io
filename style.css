@@ -289,7 +289,7 @@ strong { color: var(--text); font-weight: 600; }
 }
 
 /* ===== Journey ===== */
-.journey-track { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 24px; }
+.journey-track { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 24px; }
 
 .journey-card {
     background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
@@ -306,7 +306,8 @@ strong { color: var(--text); font-weight: 600; }
     color: var(--accent); margin-bottom: 10px; display: block;
 }
 
-.journey-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 8px; }
+.journey-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 4px; }
+.journey-company { font-size: 0.78rem; color: var(--accent); display: block; margin-bottom: 10px; }
 .journey-card p { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
 
 .education-row { display: flex; gap: 12px; }
